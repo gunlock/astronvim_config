@@ -5,6 +5,11 @@
 -- automatically pick-up stored data by this setting.)
 return {
   -- first key is the mode
+  i = {
+    -- <C-o> issues a normal mode command without exiting Insert mode
+    ['<C-e>'] = {'<C-o>A', desc='End of line'},
+    ['<C-a>'] = {'<C-o>I', desc='Beginning of line'},
+  },
   n = {
     -- second key is the lefthand side of the map
 
